@@ -5,7 +5,7 @@ import React from "react";
 function Signup() {
   const [isLoading, setIsLoading] = React.useState(false);
   const [error, setError] = React.useState("");
-  const { creatAccount, login } = useAuthStore;
+  const { creatAccount, login } = useAuthStore();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
